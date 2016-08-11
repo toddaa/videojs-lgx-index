@@ -1,0 +1,85 @@
+button#vjs-lgx-index-handle {
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	/*transition: visibility 0.1s ease 0s, opacity 0.1s ease 0s;*/
+	transition: opacity .2s ease-in-out;
+    visibility: visible;
+    
+    opacity:.75;
+    
+    border-color: #ddd;
+    
+    /*position: relative;
+    float: right;*/
+    padding: 8px 9px;
+    margin: 8px;
+    background-color: #c7c7c7;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    
+    z-index:1;
+}
+
+button#vjs-lgx-index-handle .icon-bar {
+	background-color: #888;
+	
+	display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    margin: 2px 0;
+}
+
+.vjs-user-inactive button#vjs-lgx-index-handle {
+	/*visibility: hidden;*/
+	opacity: 0;
+}
+.vjs-user-inactive.vjs-paused button#vjs-lgx-index-handle {
+	/*visibility: visible;*/
+	opacity: .75;
+}
+
+.vjs-lgx-index-menu{    
+    z-index:0;	
+	position:absolute;
+	right:0;
+	top:9px;
+    opacity:.75;
+    margin: 0 8px 8px 8px;
+    background-color: #c7c7c7;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width:200px;
+    transition: opacity .2s ease-in-out;
+    visibility: visible;
+    font-size:12px;
+}
+.vjs-lgx-index-menu h3{  
+	margin: 0;
+    font-size: 18px;
+    margin: 8px 8px 10px 8px;
+    color: #000;
+}
+
+.vjs-lgx-index-menu ul{  
+	border-top: 1px solid #ddd;
+	overflow-y:auto;
+}
+
+.vjs-lgx-index-menu .nav-pills>li>a {
+    border-radius: 0;
+    background-color: #c7c7c7;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.vjs-user-inactive .vjs-lgx-index-menu {
+	/*visibility: hidden;*/
+	opacity: 0;
+}
+.vjs-user-inactive.vjs-paused .vjs-lgx-index-menu {
+	/*visibility: visible;*/
+	opacity: .75;
+}
